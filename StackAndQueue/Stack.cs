@@ -26,7 +26,7 @@ namespace StackAndQueue
                 newNode.next = top;
             }
             top = newNode;
-            Console.WriteLine("Pushed to Stack is :" + data);
+            Console.WriteLine(" Pushed to Stack is :" + data);
         }
 
         public void display()
@@ -36,16 +36,16 @@ namespace StackAndQueue
             Node temp=top;
             if(temp==null)
             {
-                Console.WriteLine("Stack is Empty");
+                Console.WriteLine(" Stack is Empty");
             }
             while(temp!=null)
             {
-                Console.WriteLine($"Element {i} in the Stack is"+temp.data);
+                Console.WriteLine($" Element {i} in the Stack is : "+temp.data);
                 temp = temp.next;
                 size = i;
                 i++;
             }
-            Console.WriteLine("Total Element of Size is :"+size);
+            Console.WriteLine(" Total Element of Size is :"+size);
         }
     }
 }
